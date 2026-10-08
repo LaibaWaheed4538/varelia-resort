@@ -1,31 +1,36 @@
-/* --- FINAL CLEAN RESPONSIVE FIX --- */
-
+/* 1. Large Tablets & Small Laptops (Max Width: 1024px) */
 @media screen and (max-width: 1024px) {
     .container {
-        padding: 0 20px;
+        padding: 0 24px;
     }
+
+    .desktop-nav {
+        gap: 20px;
+    }
+
+    .desktop-nav .nav-link {
+        font-size: 0.8rem;
+    }
+
     .features-design-grid {
         grid-template-columns: repeat(2, 1fr) !important;
-        gap: 20px !important;
+        gap: 24px !important;
     }
 }
 
+/* 2. Tablets & Mobile Landscape (Max Width: 768px) */
 @media screen and (max-width: 768px) {
-    /* Navbar ko stack kar dein taake overlap na ho */
     #main-header {
         position: relative !important;
-        background: rgba(17, 53, 63, 0.95) !important;
-        padding: 12px 0 !important;
+        background: transparent !important;
+        padding: 15px 0 !important;
     }
 
     .nav-container {
         flex-direction: column !important;
-        gap: 10px !important;
+        gap: 12px !important;
+        padding: 10px 15px !important;
         text-align: center !important;
-    }
-
-    .brand-logo {
-        align-items: center !important;
     }
 
     .desktop-nav {
@@ -38,15 +43,14 @@
     .desktop-nav .nav-link {
         font-size: 0.7rem !important;
         letter-spacing: 1px !important;
-        padding: 2px 5px !important;
+        color: var(--text-light) !important;
     }
 
-    /* Hero section ka spacing fix taake text na chhupe */
+    /* Hero Section Scale */
     .hero-section {
         height: auto !important;
-        min-height: 500px !important;
+        min-height: 450px !important;
         padding: 40px 15px !important;
-        margin-top: 0 !important;
     }
 
     .hero-title {
@@ -56,7 +60,8 @@
     }
 
     .hero-desc {
-        font-size: 0.9rem !important;
+        font-size: 0.85rem !important;
+        padding: 0 15px;
         margin-bottom: 25px !important;
     }
 
@@ -64,6 +69,15 @@
         font-size: 0.75rem !important;
         letter-spacing: 3px !important;
         margin-bottom: 10px !important;
+    }
+
+    .features-design-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .luxury-card, .feature-card {
+        padding: 25px 20px !important;
     }
 
     .hero-buttons {
@@ -77,20 +91,6 @@
         font-size: 0.75rem !important;
     }
 
-    /* Grids & Cards */
-    h2 {
-        font-size: 1.8rem !important;
-    }
-
-    .features-design-grid {
-        grid-template-columns: 1fr !important;
-        gap: 20px !important;
-    }
-
-    .feature-card {
-        padding: 30px 20px !important;
-    }
-
     .stats-banner {
         grid-template-columns: 1fr !important;
         padding: 30px 20px !important;
@@ -101,9 +101,30 @@
         font-size: 2.5rem !important;
     }
 
+    /* Footer Layout */
     .footer-grid {
         grid-template-columns: 1fr !important;
         gap: 30px !important;
         text-align: center !important;
+    }
+}
+
+/* 3. Small Mobile Phones (Max Width: 480px) */
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 1.6rem !important;
+    }
+
+    .brand-logo .logo-text {
+        font-size: 1.2rem !important;
+        letter-spacing: 2px !important;
+    }
+
+    .brand-logo .logo-sub {
+        font-size: 0.55rem !important;
+    }
+
+    .luxury-card, .feature-card {
+        padding: 20px 15px !important;
     }
 }
