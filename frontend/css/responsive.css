@@ -1,4 +1,4 @@
-/* --- PERFECT RESPONSIVE FIX FOR MOBILE & TABLET --- */
+/* --- FINAL CLEAN RESPONSIVE FIX --- */
 
 @media screen and (max-width: 1024px) {
     .container {
@@ -11,47 +11,53 @@
 }
 
 @media screen and (max-width: 768px) {
-    /* Navbar ko laptop ki tarah row mein hi rakhein, bas padding aur size chota kar dein */
-    .nav-container {
-        padding: 10px 15px !important;
-    }
-    
-    .brand-logo .logo-text {
-        font-size: 1.3rem !important;
-        letter-spacing: 2px !important;
+    /* Navbar ko stack kar dein taake overlap na ho */
+    #main-header {
+        position: relative !important;
+        background: rgba(17, 53, 63, 0.95) !important;
+        padding: 12px 0 !important;
     }
 
-    .brand-logo .logo-sub {
-        font-size: 0.5rem !important;
+    .nav-container {
+        flex-direction: column !important;
+        gap: 10px !important;
+        text-align: center !important;
+    }
+
+    .brand-logo {
+        align-items: center !important;
     }
 
     .desktop-nav {
         display: flex !important;
-        gap: 12px !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 10px 15px !important;
     }
 
     .desktop-nav .nav-link {
-        font-size: 0.65rem !important;
+        font-size: 0.7rem !important;
         letter-spacing: 1px !important;
-        padding: 2px 0 !important;
+        padding: 2px 5px !important;
     }
 
-    /* Hero Section ko mobile ke hisab se compact banayein */
+    /* Hero section ka spacing fix taake text na chhupe */
     .hero-section {
-        height: 60vh !important;
-        min-height: 400px !important;
-        padding: 0 10px !important;
+        height: auto !important;
+        min-height: 500px !important;
+        padding: 40px 15px !important;
+        margin-top: 0 !important;
     }
 
     .hero-title {
-        font-size: 1.8rem !important;
+        font-size: 1.9rem !important;
         line-height: 1.2 !important;
         margin-bottom: 12px !important;
     }
 
     .hero-desc {
-        font-size: 0.85rem !important;
-        margin-bottom: 20px !important;
+        font-size: 0.9rem !important;
+        margin-bottom: 25px !important;
     }
 
     .tagline {
@@ -61,43 +67,43 @@
     }
 
     .hero-buttons {
-        gap: 10px !important;
+        flex-direction: column !important;
+        gap: 12px !important;
     }
 
     .btn {
-        padding: 10px 20px !important;
-        font-size: 0.7rem !important;
-        letter-spacing: 1px !important;
+        width: 100% !important;
+        padding: 12px 20px !important;
+        font-size: 0.75rem !important;
     }
 
-    /* General Headings and Grids */
+    /* Grids & Cards */
     h2 {
         font-size: 1.8rem !important;
     }
 
     .features-design-grid {
         grid-template-columns: 1fr !important;
-        gap: 15px !important;
+        gap: 20px !important;
     }
 
     .feature-card {
-        padding: 25px 20px !important;
+        padding: 30px 20px !important;
     }
 
     .stats-banner {
-        grid-template-columns: repeat(2, 1fr) !important;
-        padding: 30px 15px !important;
-        gap: 15px !important;
+        grid-template-columns: 1fr !important;
+        padding: 30px 20px !important;
+        gap: 20px !important;
     }
 
     .stat-num {
-        font-size: 2.2rem !important;
+        font-size: 2.5rem !important;
     }
 
-    /* Footer adjustments */
     .footer-grid {
         grid-template-columns: 1fr !important;
-        gap: 25px !important;
-        text-align: center;
+        gap: 30px !important;
+        text-align: center !important;
     }
 }
