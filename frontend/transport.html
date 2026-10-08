@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Transport & Heli Transfers — VARELIA Luxury Resort</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .transport-modal {
+            background: #ffffff;
+            width: 90%;
+            max-width: 550px;
+            padding: 40px;
+            border-radius: 4px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        .modal-title {
+            font-family: var(--font-heading);
+            color: var(--color-primary);
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: var(--text-dark);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #D6CEC2;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            outline: none;
+            background: #FAF8F5;
+        }
+
+        .price-breakdown {
+            background: #F5EFE6;
+            padding: 16px;
+            border-radius: 4px;
+            margin: 20px 0;
+            border: 1px solid #E5DCCF;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        .price-total {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            border-top: 1px dashed #C5BBAA;
+            padding-top: 8px;
+            margin-top: 8px;
+        }
+
+        .booking-status {
+            display: none;
+            padding: 14px;
+            background: #E6F4EA;
+            color: #137333;
+            border: 1px solid #CEEAD6;
+            margin-top: 15px;
+            font-size: 0.88rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header id="main-header" class="header-transparent">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="logo-text">VARELIA</span>
+                <span class="logo-sub">HUNZA VALLEY • PAKISTAN</span>
+            </a>
+            
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="stay.html" class="nav-link">STAY</a>
+                <a href="experiences.html" class="nav-link">EXPERIENCES</a>
+                <a href="packages.html" class="nav-link">PACKAGES</a>
+                <a href="dining.html" class="nav-link">DINING</a>
+                <a href="transport.html" class="nav-link active">TRANSPORT</a>
+                <a href="dashboard.html" class="nav-link" style="color: var(--color-gold);">DASHBOARD</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="booking.html" class="btn btn-gold" style="white-space: nowrap;">BOOK NOW</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" style="height: 60vh; min-height: 450px; background-image: url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=2000&q=80'); background-size: cover; background-position: center;">
+            <div class="hero-overlay" style="background: rgba(15, 23, 42, 0.55);"></div>
+            <div class="hero-content">
+                <p class="tagline">SEAMLESS ARRIVALS</p>
+                <h1 class="hero-title">PRIVATE TRANSPORT & HELI TRANSFERS</h1>
+                <p class="hero-desc">Your journey through the Karakoram mountains begins the moment you touch down.</p>
+            </div>
+        </section>
+
+        <!-- Transport Options Grid -->
+        <section style="padding: 90px 0; background-color: #fcfbf9;">
+            <div class="container">
+                <div class="section-intro text-center">
+                    <span class="section-tag">TAILORED TRAVEL</span>
+                    <h2>Exclusive Guest Transit Options</h2>
+                    <p>Select your transport preference below to calculate expenditures directly for your reservation.</p>
+                </div>
+
+                <div class="features-design-grid" style="grid-template-columns: repeat(3, 1fr); gap: 32px;">
+                    <div class="feature-card" style="padding: 40px 30px; text-align: center;">
+                        <span style="font-size: 2rem; color: var(--color-gold); display: block; margin-bottom: 12px;">🚁</span>
+                        <h3 style="margin-bottom: 8px; font-family: var(--font-heading);">Helicopter Transfers</h3>
+                        <p style="color: var(--color-gold); font-weight: 700; margin-bottom: 12px;">PKR 150,000 / Transfer</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">Direct helipad transfers from Gilgit or Skardu straight to VARELIA in under 20 minutes.</p>
+                        <button onclick="openTransportModal('Helicopter Transfer', 150000)" class="btn btn-gold" style="font-size: 0.75rem;">Reserve Transfer</button>
+                    </div>
+
+                    <div class="feature-card" style="padding: 40px 30px; text-align: center;">
+                        <span style="font-size: 2rem; color: var(--color-gold); display: block; margin-bottom: 12px;">🚘</span>
+                        <h3 style="margin-bottom: 8px; font-family: var(--font-heading);">Private Luxury 4x4s</h3>
+                        <p style="color: var(--color-gold); font-weight: 700; margin-bottom: 12px;">PKR 35,000 / Trip</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">Customized Toyota Land Cruiser Prado with heated seats, Wi-Fi, and private mountain chauffeur.</p>
+                        <button onclick="openTransportModal('Chauffeured Luxury 4x4', 35000)" class="btn btn-gold" style="font-size: 0.75rem;">Reserve Chauffeured SUV</button>
+                    </div>
+
+                    <div class="feature-card" style="padding: 40px 30px; text-align: center;">
+                        <span style="font-size: 2rem; color: var(--color-gold); display: block; margin-bottom: 12px;">🛫</span>
+                        <h3 style="margin-bottom: 8px; font-family: var(--font-heading);">Airport VIP Concierge</h3>
+                        <p style="color: var(--color-gold); font-weight: 700; margin-bottom: 12px;">PKR 15,000 / Guest</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">Personal tarmac greeting, luggage handling, and direct entry into airport lounge.</p>
+                        <button onclick="openTransportModal('Airport VIP Concierge', 15000)" class="btn btn-gold" style="font-size: 0.75rem;">Contact Concierge</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="transportModalOverlay" class="modal-overlay">
+        <div class="transport-modal">
+            <span class="modal-close" onclick="closeTransportModal()">&times;</span>
+            <h3 id="modalServiceTitle" class="modal-title">Add Transport Expenditure</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 20px;">Review pricing breakdown before adding to total reservation expenditures.</p>
+
+            <form id="transportForm" onsubmit="handleTransportSubmit(event)">
+                <div class="form-group">
+                    <label>Selected Service</label>
+                    <input type="text" id="selectedServiceInput" class="form-control" readonly style="background: #EAE6DF; font-weight: 600;">
+                </div>
+
+                <div class="form-group">
+                    <label>Number of Trips / Guests</label>
+                    <select id="quantitySelect" class="form-control" onchange="calculateTotalCost()">
+                        <option value="1">1 (Standard single trip)</option>
+                        <option value="2">2 (Round trip / 2 Guests)</option>
+                        <option value="3">3 (3 Guests / Trips)</option>
+                        <option value="4">4 (4 Guests / Trips)</option>
+                    </select>
+                </div>
+
+                <div class="price-breakdown">
+                    <div class="price-row">
+                        <span>Base Transport Rate:</span>
+                        <span id="baseRateText">PKR 0</span>
+                    </div>
+                    <div class="price-row">
+                        <span>Luxury Service Fee (5%):</span>
+                        <span id="taxFeeText">PKR 0</span>
+                    </div>
+                    <div class="price-total">
+                        <span>Transport Total:</span>
+                        <span id="totalExpenditureText" style="color: var(--color-gold);">PKR 0</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Guest Full Name</label>
+                    <input type="text" class="form-control" placeholder="e.g. Hassan Ahmed" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Arrival Date & Details</label>
+                    <input type="text" class="form-control" placeholder="e.g. Oct 12 — PIA PK-605" required>
+                </div>
+
+                <button type="submit" class="btn btn-gold" style="width: 100%; padding: 14px; font-weight: 700; margin-top: 10px;">ADD TO TOTAL BOOKING</button>
+            </form>
+
+            <div id="bookingSuccessMsg" class="booking-status">
+                ✓ Transport Expenditure Added! Redirecting to Complete Book Now Checkout...
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>VARELIA</h3>
+                <p>"The Art of Escape in Northern Pakistan."</p>
+                <p class="footer-copy">&copy; 2026 VARELIA Luxury Resort Hunza. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="stay.html">Accommodations</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="dining.html">Dining & Cuisine</a></li>
+                    <li><a href="packages.html">Exclusive Packages</a></li>
+                    <li><a href="transport.html">Private Transport</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Guest Services</h4>
+                <ul>
+                    <li><a href="transport.html">Airport Heli Transfers</a></li>
+                    <li><a href="dining.html">Private Barbeque</a></li>
+                    <li><a href="experiences.html">Gilgit Expedition Guides</a></li>
+                    <li><a href="stay.html">Luxury Suites</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        let currentBasePrice = 0;
+        let currentService = "";
+
+        function openTransportModal(serviceName, basePrice) {
+            currentBasePrice = basePrice;
+            currentService = serviceName;
+            document.getElementById('modalServiceTitle').innerText = "Add " + serviceName;
+            document.getElementById('selectedServiceInput').value = serviceName;
+            document.getElementById('quantitySelect').value = 1;
+            document.getElementById('bookingSuccessMsg').style.display = 'none';
+            document.getElementById('transportForm').style.display = 'block';
+            calculateTotalCost();
+            document.getElementById('transportModalOverlay').classList.add('active');
+        }
+
+        function calculateTotalCost() {
+            let qty = parseInt(document.getElementById('quantitySelect').value) || 1;
+            let subtotal = currentBasePrice * qty;
+            let serviceFee = Math.round(subtotal * 0.05);
+            let total = subtotal + serviceFee;
+
+            document.getElementById('baseRateText').innerText = "PKR " + subtotal.toLocaleString();
+            document.getElementById('taxFeeText').innerText = "PKR " + serviceFee.toLocaleString();
+            document.getElementById('totalExpenditureText').innerText = "PKR " + total.toLocaleString();
+        }
+
+        function closeTransportModal() {
+            document.getElementById('transportModalOverlay').classList.remove('active');
+        }
+
+        function handleTransportSubmit(e) {
+            e.preventDefault();
+            let qty = parseInt(document.getElementById('quantitySelect').value) || 1;
+            let subtotal = currentBasePrice * qty;
+            let total = subtotal + Math.round(subtotal * 0.05);
+
+            localStorage.setItem('varelia_transport_item', currentService);
+            localStorage.setItem('varelia_transport_cost', total);
+
+            document.getElementById('transportForm').style.display = 'none';
+            document.getElementById('bookingSuccessMsg').style.display = 'block';
+            
+            setTimeout(() => {
+                window.location.href = 'booking.html';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

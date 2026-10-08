@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Reservation — VARELIA Luxury Resort Hunza</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8f6f0;
+            color: #1e293b;
+        }
+        h1, h2, h3, .hero-title, .section-tag {
+            font-family: 'Cinzel', serif;
+        }
+        .luxury-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-top: 4px solid #D4AF37;
+            border-radius: 8px;
+            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+            padding: 50px 40px;
+        }
+        .form-control-luxury {
+            width: 100%;
+            padding: 14px 18px;
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            color: #0f172a;
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        .form-control-luxury:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.15);
+        }
+        .form-label-luxury {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+        .summary-box {
+            background: #0f172a !important;
+            color: #ffffff !important;
+            border-left: 4px solid #D4AF37;
+            padding: 30px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+        }
+        .summary-box span, .summary-box div, .summary-box p {
+            color: #ffffff !important;
+        }
+        #summary-price {
+            color: #D4AF37 !important;
+        }
+        .btn-luxury-gold {
+            background: linear-gradient(135deg, #D4AF37 0%, #aa8c2c 100%);
+            color: #ffffff;
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 16px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212,175,55,0.3);
+        }
+        .btn-luxury-gold:hover {
+            background: linear-gradient(135deg, #e6c555, #D4AF37);
+            box-shadow: 0 6px 20px rgba(212,175,55,0.5);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation Header -->
+    <header id="main-header" class="header-transparent">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo" style="display: flex; align-items: center; gap: 10px;">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 22 22 22 12 2"></polygon>
+                    <polyline points="12 6 8 14 16 14 12 6"></polyline>
+                </svg>
+                <div>
+                    <span class="logo-text">VARELIA</span>
+                    <span class="logo-sub">HUNZA VALLEY • PAKISTAN</span>
+                </div>
+            </a>
+            
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="stay.html" class="nav-link">STAY</a>
+                <a href="experiences.html" class="nav-link">EXPERIENCES</a>
+                <a href="packages.html" class="nav-link">PACKAGES</a>
+                <a href="dining.html" class="nav-link">DINING</a>
+                <a href="transport.html" class="nav-link">TRANSPORT</a>
+                <a href="dashboard.html" class="nav-link" style="color: var(--color-gold);">DASHBOARD</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="booking.html" class="btn btn-gold" style="white-space: nowrap;">BOOK NOW</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Background Image -->
+        <section class="hero-section" style="height: 50vh; min-height: 400px; background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=2000&q=80'); background-size: cover; background-position: center; position: relative; display: flex; align-items: center; justify-content: center; text-align: center;">
+            <div class="hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.55);"></div>
+            <div class="hero-content" style="position: relative; z-index: 2; color: #ffffff;">
+                <p class="tagline" style="color: #D4AF37; letter-spacing: 3px; font-size: 0.85rem; font-weight: 600; margin-bottom: 10px;">EXCLUSIVE SANCTUARY</p>
+                <h1 class="hero-title" style="font-size: 2.8rem; color: #ffffff;">RESERVE YOUR STAY</h1>
+            </div>
+        </section>
+
+        <!-- Elegant Statement Section -->
+        <section style="padding: 50px 0 10px 0; background-color: #f8f6f0; text-align: center;">
+            <div class="container" style="max-width: 850px; margin: 0 auto; padding: 0 20px;">
+                <p style="font-family: 'Cinzel', serif; font-size: 1.15rem; color: #ffffff; font-weight: 500; letter-spacing: 0.5px; line-height: 1.6; background: #1e293b; padding: 22px 30px; border-radius: 6px; border-left: 4px solid #D4AF37; box-shadow: 0 8px 25px rgba(30,58,138,0.15);">
+                    "Immerse yourself in absolute tranquility where pristine alpine horizons meet uncompromised royal hospitality."
+                </p>
+            </div>
+        </section>
+
+        <!-- Booking Form Section -->
+        <section style="padding: 30px 0 90px 0; background-color: #f8f6f0;">
+            <div class="container" style="max-width: 850px; margin: 0 auto;">
+                <div class="section-intro text-center" style="margin-bottom: 45px;">
+                    <span class="section-tag" style="color: #D4AF37; letter-spacing: 2px; font-size: 0.8rem;">TAILORED EXPERIENCE</span>
+                    <h2 style="color: #0f172a; font-size: 2.2rem; margin-top: 10px; font-family: 'Cinzel', serif;">The Varelia Booking Portal</h2>
+                    <p style="color: #64748b; font-size: 0.95rem; margin-top: 10px;">Select your timeframe and bespoke amenities below to initialize your reservation.</p>
+                </div>
+
+                <div class="luxury-card">
+                    <form id="resort-booking-form">
+                        
+                        <!-- Guest Details -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 25px;">
+                            <div>
+                                <label class="form-label-luxury">Full Name</label>
+                                <input type="text" id="booking-name" class="form-control-luxury" placeholder="Enter your full name" required>
+                            </div>
+                            <div>
+                                <label class="form-label-luxury">Email Address</label>
+                                <input type="email" id="booking-email" class="form-control-luxury" placeholder="name@example.com" required>
+                            </div>
+                        </div>
+
+                        <!-- Dates -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 25px;">
+                            <div>
+                                <label class="form-label-luxury">Check-in Date</label>
+                                <input type="date" id="booking-checkin" class="form-control-luxury" required>
+                            </div>
+                            <div>
+                                <label class="form-label-luxury">Check-out Date</label>
+                                <input type="date" id="booking-checkout" class="form-control-luxury" required>
+                            </div>
+                        </div>
+
+                        <!-- Suite Selection -->
+                        <div style="margin-bottom: 25px;">
+                            <label class="form-label-luxury">Accommodation Suite</label>
+                            <select id="booking-suite" class="form-control-luxury">
+                                <option value="45000">Walnut Alpine Chalet — PKR 45,000 / night</option>
+                                <option value="65000">Glass Horizon Suite — PKR 65,000 / night</option>
+                                <option value="110000">Passu Presidential Villa — PKR 110,000 / night</option>
+                            </select>
+                        </div>
+
+                        <!-- Guests -->
+                        <div style="margin-bottom: 25px;">
+                            <label class="form-label-luxury">Number of Guests</label>
+                            <select id="booking-guests" class="form-control-luxury">
+                                <option value="2">2 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="6">6 Guests</option>
+                                <option value="7+">7+ Guests (Private Concierge Required)</option>
+                            </select>
+                        </div>
+
+                        <!-- Transport / Transfer Add-on -->
+                        <div style="margin-bottom: 25px;">
+                            <label class="form-label-luxury">Transport / Transfer Add-on</label>
+                            <select id="booking-transport" class="form-control-luxury">
+                                <option value="0">No Transport Required (PKR 0)</option>
+                                <option value="150000">Helicopter Transfers — PKR 150,000 / Transfer</option>
+                                <option value="35000">Private Luxury 4x4s (Chauffeured SUV) — PKR 35,000 / Trip</option>
+                                <option value="15000">Airport VIP Concierge — PKR 15,000 / Guest</option>
+                            </select>
+                        </div>
+
+                       
+                        <div style="margin-bottom: 25px;">
+                            <label class="form-label-luxury">Expedition Guide Add-on</label>
+                            <select id="booking-guide" class="form-control-luxury">
+                                <option value="0">No Guide Required (PKR 0)</option>
+                                <option value="20000">Tariq Karim - Head Expedition Leader (PKR 20,000)</option>
+                                <option value="25000">Shahid Ali - Glacier & Heli-Ski Master (PKR 25,000)</option>
+                                <option value="30000">Amina Hunzai - Cultural & Culinary Specialist (PKR 30,000)</option>
+                            </select>
+                        </div>
+
+                        <!-- Dining Add-on -->
+                        <div style="margin-bottom: 25px;">
+                            <label class="form-label-luxury">Bespoke Dining Experience</label>
+                            <select id="booking-dining" class="form-control-luxury">
+                                <option value="0">No Special Dining (PKR 0)</option>
+                                <option value="25000">The Rakaposhi Open Hearth (7-Course Tasting) — PKR 25,000</option>
+                                <option value="12000">The Glacier Tea & Botanical Lounge — PKR 12,000</option>
+                                <option value="18000">Cedar Hearth Fireside Barbeque — PKR 18,000</option>
+                            </select>
+                        </div>
+
+                        
+                        <div style="margin-bottom: 35px;">
+                            <label class="form-label-luxury">Exclusive Package Add-on</label>
+                            <select id="booking-package" class="form-control-luxury">
+                                <option value="0">Standard Stay (PKR 0)</option>
+                                <option value="125000">Silk Route Heritage Journey (PKR 125,000)</option>
+                                <option value="280000">Glacier & Heli Expedition (PKR 280,000)</option>
+                                <option value="350000">Grand Passu Family Retreat (PKR 350,000)</option>
+                                <option value="165000">Attabad Lake Turquoise Excursion (PKR 165,000)</option>
+                                <option value="195000">Himalayan Wellness & Detox (PKR 195,000)</option>
+                                <option value="140000">Northern Culinary Masterclass (PKR 140,000)</option>
+                            </select>
+                        </div>
+
+                     
+                        <div class="summary-box">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                <span id="summary-nights" style="font-size: 0.95rem; font-weight: 500;">1 Night Stay</span>
+                                <span id="summary-price" style="font-size: 1.8rem; font-weight: 700; font-family: 'Cinzel', serif;">PKR 45,000</span>
+                            </div>
+                            <p style="font-size: 0.8rem; margin: 0; opacity: 0.85;">Includes all luxury resort amenities, mountain breakfast, and applicable taxes.</p>
+                        </div>
+
+                        <button type="submit" class="btn-luxury-gold">Secure & Register Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>VARELIA</h3>
+                <p>"The Art of Escape in Northern Pakistan."</p>
+                <p class="footer-copy">&copy; 2026 VARELIA Luxury Resort Hunza. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="stay.html">Accommodations</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="dining.html">Dining & Cuisine</a></li>
+                    <li><a href="packages.html">Exclusive Packages</a></li>
+                    <li><a href="transport.html">Private Transport</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Guest Services</h4>
+                <ul>
+                    <li><a href="transport.html">Airport Heli Transfers</a></li>
+                    <li><a href="dining.html">Private Barbeque</a></li>
+                    <li><a href="experiences.html">Gilgit Expedition Guides</a></li>
+                    <li><a href="stay.html">Luxury Suites</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>

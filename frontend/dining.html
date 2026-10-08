@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinary & Dining — VARELIA Hunza</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="main-header" class="header-transparent">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="logo-text">VARELIA</span>
+                <span class="logo-sub">HUNZA VALLEY • PAKISTAN</span>
+            </a>
+            
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="stay.html" class="nav-link">Stay</a>
+                <a href="experiences.html" class="nav-link">Experiences</a>
+                <a href="packages.html" class="nav-link">Packages</a>
+                <a href="dining.html" class="nav-link active">Dining</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="booking.html" class="btn btn-gold">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="hero-section" style="height: 60vh; min-height: 450px; background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=80');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="tagline">HIGH-ALTITUDE NORTHERN GASTRONOMY</p>
+                <h1 class="hero-title">Culinary Excellence</h1>
+                <p class="hero-desc">From live stone-pit mutton roasts to organic Hunza apricot glazes and artisan mountain teas.</p>
+            </div>
+        </section>
+
+        <!-- Dining Venues Grid -->
+        <section class="container">
+            <div class="section-intro text-center">
+                <span class="section-tag">CURATED TASTING JOURNEYS</span>
+                <h2>Restaurants & Open Hearth Lounges</h2>
+                <p>Every menu celebrates organic northern harvests, wild mountain herbs, and authentic high-altitude cooking techniques.</p>
+            </div>
+
+            <div class="features-design-grid" style="grid-template-columns: repeat(3, 1fr);">
+                
+                <!-- Venue 01: Rakaposhi Hearth -->
+                <div class="feature-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    <div style="width: 100%; height: 240px; overflow: hidden; position: relative;">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Rakaposhi Open Hearth Dining" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 32px 28px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="card-icon" style="font-size: 1.8rem; margin-bottom: 12px;">01</div>
+                            <h3>The Rakaposhi Open Hearth</h3>
+                            <p style="color: var(--color-gold); font-weight: 600; font-size: 0.85rem; margin-bottom: 12px;">7-Course Tasting • Live Pit Roast</p>
+                            <p>Organic Hunza lamb, slow-cooked in subterranean river-stone pits, paired with wild blackberry reductions and local flatbreads.</p>
+                        </div>
+                        <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #e8e2d5; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-family: var(--font-heading); font-size: 1.3rem; font-weight: 700; color: var(--color-primary);">PKR 18,500 <small style="font-size: 0.8rem; font-family: var(--font-body); color: var(--text-muted);">/ guest</small></span>
+                            <a href="booking.html?service=dining-rakaposhi" class="btn btn-gold" style="padding: 8px 18px; font-size: 0.75rem;">Reserve Table</a>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="feature-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    <div style="width: 100%; height: 240px; overflow: hidden; position: relative;">
+                        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80" alt="Glacier Tea & Botanical Lounge" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 32px 28px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="card-icon" style="font-size: 1.8rem; margin-bottom: 12px;">02</div>
+                            <h3>The Glacier Tea & Botanical Lounge</h3>
+                            <p style="color: var(--color-gold); font-weight: 600; font-size: 0.85rem; margin-bottom: 12px;">High Tea • Artisan Botanical Elixirs</p>
+                            <p>Sip saffron Kashmiri chai and wild thyme brews while enjoying fresh Hunza walnut tarts and sun-dried apricot preserves.</p>
+                        </div>
+                        <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #e8e2d5; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-family: var(--font-heading); font-size: 1.3rem; font-weight: 700; color: var(--color-primary);">PKR 9,500 <small style="font-size: 0.8rem; font-family: var(--font-body); color: var(--text-muted);">/ guest</small></span>
+                            <a href="booking.html?service=tea-pavilion" class="btn btn-gold" style="padding: 8px 18px; font-size: 0.75rem;">Reserve Table</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="feature-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    <div style="width: 100%; height: 240px; overflow: hidden; position: relative;">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="Live Open Fire Barbeque Grill" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 32px 28px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="card-icon" style="font-size: 1.8rem; margin-bottom: 12px;">03</div>
+                            <h3>Cedar Hearth Fireside Barbeque</h3>
+                            <p style="color: var(--color-gold); font-weight: 600; font-size: 0.85rem; margin-bottom: 12px;">Apres-Ski Grill • Organic Platters</p>
+                            <p>Hand-carved cedar lounge with central open fire pits serving live skewers, spiced trout from Gilgit river streams, and hot naan.</p>
+                        </div>
+                        <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #e8e2d5; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-family: var(--font-heading); font-size: 1.3rem; font-weight: 700; color: var(--color-primary);">PKR 14,000 <small style="font-size: 0.8rem; font-family: var(--font-body); color: var(--text-muted);">/ guest</small></span>
+                            <a href="booking.html?service=fireside-bbq" class="btn btn-gold" style="padding: 8px 18px; font-size: 0.75rem;">Reserve Table</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>VARELIA</h3>
+                <p>"The Art of Escape in Northern Pakistan."</p>
+                <p class="footer-copy">&copy; 2026 VARELIA Luxury Resort Hunza. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="stay.html">Accommodations</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="dining.html">Dining & Cuisine</a></li>
+                    <li><a href="packages.html">Exclusive Packages</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Guest Services</h4>
+                <ul>
+                    <li><a href="booking.html">Airport Heli Transfers</a></li>
+                    <li><a href="dining.html">Private Barbeque</a></li>
+                    <li><a href="experiences.html">Gilgit Expedition Guides</a></li>
+                    <li><a href="stay.html">Luxury Suites</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

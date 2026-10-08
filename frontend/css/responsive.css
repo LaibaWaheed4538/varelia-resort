@@ -1,0 +1,99 @@
+
+  
+/* 1. Large Tablets & Small Laptops (Max Width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 24px;
+    }
+
+    .desktop-nav {
+        gap: 20px;
+    }
+
+    .desktop-nav .nav-link {
+        font-size: 0.8rem;
+    }
+
+    /* Grid adjustments */
+    .features-design-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 24px !important;
+    }
+}
+
+/* 2. Tablets & Mobile Landscape (Max Width: 768px) */
+@media screen and (max-width: 768px) {
+   
+    .desktop-nav {
+        display: none; 
+    }
+
+    .nav-container {
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+
+    /* Hero Section Scale */
+    .hero-section {
+        height: 45vh !important;
+        min-height: 320px !important;
+    }
+
+    .hero-title {
+        font-size: 2.1rem !important;
+        line-height: 1.2;
+    }
+
+    .hero-desc {
+        font-size: 0.85rem !important;
+        padding: 0 15px;
+    }
+
+    
+    .features-design-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+  
+    .luxury-card {
+        padding: 30px 20px !important;
+    }
+
+
+    form div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+
+    /* Footer Layout */
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+/* 3. Small Mobile Phones (Max Width: 480px) */
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem !important;
+    }
+
+    .brand-logo .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .brand-logo .logo-sub {
+        font-size: 0.55rem;
+    }
+
+    .luxury-card {
+        padding: 20px 15px !important;
+    }
+
+    .btn-luxury-gold, .btn-gold {
+        padding: 12px 16px;
+        font-size: 0.85rem;
+    }
+}

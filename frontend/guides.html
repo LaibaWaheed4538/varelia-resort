@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expedition Guides — VARELIA Luxury Resort</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 50px;
+        }
+        .guide-card {
+            background: #ffffff;
+            border: 1px solid #E2E8F0;
+            padding: 36px 24px;
+            border-radius: 4px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .guide-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 35px rgba(0,0,0,0.08);
+            border-color: var(--color-gold, #D4AF37);
+        }
+        .guide-avatar-wrap {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid var(--color-gold, #D4AF37);
+        }
+        .guide-avatar {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .guide-name {
+            font-family: var(--font-heading, 'Cinzel', serif);
+            font-size: 1.25rem;
+            color: var(--color-primary, #0F172A);
+            margin-bottom: 6px;
+        }
+        .guide-role {
+            font-size: 0.78rem;
+            color: var(--color-gold, #D4AF37);
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .guide-price {
+            font-family: var(--font-heading, 'Cinzel', serif);
+            font-size: 0.95rem;
+            color: var(--color-primary, #0F172A);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+        .guide-bio {
+            font-size: 0.88rem;
+            color: var(--text-muted, #64748B);
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation Header -->
+    <header id="main-header" class="header-transparent">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="logo-text">VARELIA</span>
+                <span class="logo-sub">HUNZA VALLEY • PAKISTAN</span>
+            </a>
+            
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="stay.html" class="nav-link">STAY</a>
+                <a href="experiences.html" class="nav-link">EXPERIENCES</a>
+                <a href="packages.html" class="nav-link">PACKAGES</a>
+                <a href="dining.html" class="nav-link">DINING</a>
+                <a href="transport.html" class="nav-link">TRANSPORT</a>
+                <a href="dashboard.html" class="nav-link" style="color: var(--color-gold, #D4AF37);">DASHBOARD</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="booking.html" class="btn btn-gold" style="white-space: nowrap;">BOOK NOW</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" style="height: 60vh; min-height: 450px; background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=80'); background-size: cover; background-position: center;">
+            <div class="hero-overlay" style="background: rgba(15, 23, 42, 0.58);"></div>
+            <div class="hero-content">
+                <p class="tagline">EXPERT MOUNTAINEERS</p>
+                <h1 class="hero-title">EXPEDITION GUIDES</h1>
+                <p class="hero-desc">Certified Karakoram high-altitude specialists dedicated to your personal safety, exploration, and cultural discovery.</p>
+            </div>
+        </section>
+
+        <!-- Guides List Section -->
+        <section style="padding: 90px 0; background-color: #fcfbf9;">
+            <div class="container">
+                <div class="section-intro text-center">
+                    <span class="section-tag">PRIVATE ESCORTS</span>
+                    <h2>Meet Our Resident Mountain Masters</h2>
+                    <p>Every excursion across Hunza and Gilgit-Baltistan is accompanied by native experts trained in high-altitude protocols.</p>
+                </div>
+
+                <div class="guides-grid">
+                    <!-- Guide 1 -->
+                    <div class="guide-card">
+                        <div class="guide-avatar-wrap">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Tariq Karim" class="guide-avatar">
+                        </div>
+                        <h3 class="guide-name">Tariq Karim</h3>
+                        <div class="guide-role">Head Expedition Leader</div>
+                        <div class="guide-price">Fee: $150 / Day</div>
+                        <p class="guide-bio">20+ years navigating Rakaposhi, Ultar Sar, and Passu Cones. Certified wilderness first responder and high-altitude rescue lead.</p>
+                        <button onclick="bookGuide('Tariq Karim', 150)" class="btn btn-gold" style="font-size: 0.75rem; padding: 10px 20px; width: 100%; cursor: pointer;">Book Private Guide</button>
+                    </div>
+
+                    <!-- Guide 2 -->
+                    <div class="guide-card">
+                        <div class="guide-avatar-wrap">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Shahid Ali" class="guide-avatar">
+                        </div>
+                        <h3 class="guide-name">Shahid Ali</h3>
+                        <div class="guide-role">Glacier & Heli-Ski Master</div>
+                        <div class="guide-price">Fee: $150 / Day</div>
+                        <p class="guide-bio">Specialist in Attabad Lake boat expeditions, Passu Glacier treks, and coordinating private helicopter drop-offs across upper Gojal.</p>
+                        <button onclick="bookGuide('Shahid Ali', 150)" class="btn btn-gold" style="font-size: 0.75rem; padding: 10px 20px; width: 100%; cursor: pointer;">Book Private Guide</button>
+                    </div>
+
+                    <!-- Guide 3 -->
+                    <div class="guide-card">
+                        <div class="guide-avatar-wrap">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Amina Hunzai" class="guide-avatar">
+                        </div>
+                        <h3 class="guide-name">Amina Hunzai</h3>
+                        <div class="guide-role">Cultural & Culinary Specialist</div>
+                        <div class="guide-price">Fee: $150 / Day</div>
+                        <p class="guide-bio">Expert in Baltit Fort history, organic apricot orchard walks, traditional herb foraging, and immersive local village encounters.</p>
+                        <button onclick="bookGuide('Amina Hunzai', 150)" class="btn btn-gold" style="font-size: 0.75rem; padding: 10px 20px; width: 100%; cursor: pointer;">Book Private Guide</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>VARELIA</h3>
+                <p>"The Art of Escape in Northern Pakistan."</p>
+                <p class="footer-copy">&copy; 2026 VARELIA Luxury Resort Hunza. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="stay.html">Accommodations</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="dining.html">Dining & Cuisine</a></li>
+                    <li><a href="guides.html">Expedition Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Admin Access</h4>
+                <ul>
+                    <li><a href="dashboard.html">Management Portal</a></li>
+                    <li><a href="journal.html">Journal / Stories</a></li>
+                    <li><a href="about.html">About VARELIA</a></li>
+                    <li><a href="contact.html">Guest Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Booking Logic Script -->
+    <script>
+        function bookGuide(guideName, price) {
+            
+            sessionStorage.setItem('selectedGuide', guideName);
+            sessionStorage.setItem('guideFee', price);
+            
+            
+            let currentTotal = parseFloat(localStorage.getItem('varelia_total_addon') || '0');
+            localStorage.setItem('varelia_total_addon', (currentTotal + price).toString());
+
+            alert(`Success! Private Guide "${guideName}" ($${price}/day) has been added to your VARELIA reservation itinerary.`);
+            window.location.href = 'transport.html';
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

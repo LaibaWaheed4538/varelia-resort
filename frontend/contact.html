@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Support & Contact — VARELIA Luxury Resort</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 50px;
+            margin-top: 60px;
+            align-items: start;
+        }
+        .contact-info-card {
+            background: var(--color-primary, #0F172A);
+            color: #ffffff;
+            padding: 45px 35px;
+            border-radius: 4px;
+            border-top: 3px solid var(--color-gold, #D4AF37);
+        }
+        .contact-info-card h3 {
+            font-family: var(--font-heading, 'Cinzel', serif);
+            font-size: 1.5rem;
+            color: var(--color-gold, #D4AF37);
+            margin-bottom: 20px;
+        }
+        .contact-info-card p {
+            font-size: 0.9rem;
+            color: #94A3B8;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+        .info-item {
+            margin-bottom: 20px;
+        }
+        .info-title {
+            font-size: 0.75rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--color-gold, #D4AF37);
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .info-value {
+            font-size: 0.95rem;
+            color: #ffffff;
+        }
+        .contact-form-wrap {
+            background: #ffffff;
+            border: 1px solid #E2E8F0;
+            padding: 45px 35px;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+        }
+        .contact-form-wrap h3 {
+            font-family: var(--font-heading, 'Cinzel', serif);
+            font-size: 1.5rem;
+            color: var(--color-primary, #0F172A);
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--color-primary, #0F172A);
+            margin-bottom: 8px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #CBD5E1;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            transition: border-color 0.3s ease;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--color-gold, #D4AF37);
+        }
+        textarea.form-control {
+            resize: vertical;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation Header -->
+    <header id="main-header" class="header-transparent">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="logo-text">VARELIA</span>
+                <span class="logo-sub">HUNZA VALLEY • PAKISTAN</span>
+            </a>
+            
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="stay.html" class="nav-link">STAY</a>
+                <a href="experiences.html" class="nav-link">EXPERIENCES</a>
+                <a href="packages.html" class="nav-link">PACKAGES</a>
+                <a href="dining.html" class="nav-link">DINING</a>
+                <a href="transport.html" class="nav-link">TRANSPORT</a>
+                <a href="dashboard.html" class="nav-link" style="color: var(--color-gold, #D4AF37);">DASHBOARD</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="booking.html" class="btn btn-gold" style="white-space: nowrap;">BOOK NOW</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" style="height: 60vh; min-height: 450px; background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80'); background-size: cover; background-position: center;">
+            <div class="hero-overlay" style="background: rgba(15, 23, 42, 0.58);"></div>
+            <div class="hero-content">
+                <p class="tagline">CONCIERGE & INQUIRIES</p>
+                <h1 class="hero-title">CONNECT WITH VARELIA</h1>
+                <p class="hero-desc">Our dedicated private concierge is available 24/7 to assist with your mountain expeditions, private charters, and luxury stays.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section style="padding: 90px 0; background-color: #fcfbf9;">
+            <div class="container">
+                <div class="section-intro text-center">
+                    <span class="section-tag">PERSONAL ASSISTANCE</span>
+                    <h2>We Are Here For Your Journey</h2>
+                    <p>Reach out to our management or submit a custom reservation inquiry below.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Info Card -->
+                    <div class="contact-info-card">
+                        <h3>Resort Headquarters</h3>
+                        <p>Experience world-class hospitality at the roof of the world. Contact our desk directly for urgent assistance.</p>
+                        
+                        <div class="info-item">
+                            <div class="info-title">Location</div>
+                            <div class="info-value">Karimabad, Hunza Valley, Gilgit-Baltistan, Pakistan</div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-title">Direct Concierge Line</div>
+                            <div class="info-value">+92 (5813) 456-789</div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-title">VIP Support Email</div>
+                            <div class="info-value">concierge@vareliahunza.com</div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-title">Helipad Coordinates</div>
+                            <div class="info-value">36.3167° N, 74.6500° E (Altitude 2,500m)</div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrap">
+                        <h3>Send a Message</h3>
+                        <p style="font-size: 0.88rem; color: var(--text-muted, #64748B); margin-bottom: 24px;">Fill out the form below and our management will respond within 2 hours.</p>
+                        
+                        <form id="guestContactForm" onsubmit="handleContactSubmit(event)">
+                            <div class="form-group">
+                                <label for="guestName">Full Name</label>
+                                <input type="text" id="guestName" class="form-control" placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="guestEmail">Email Address</label>
+                                <input type="email" id="guestEmail" class="form-control" placeholder="name@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="guestPhone">Phone / WhatsApp</label>
+                                <input type="text" id="guestPhone" class="form-control" placeholder="+92 300 1234567" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="guestSubject">Subject / Inquiry Type</label>
+                                <select id="guestSubject" class="form-control" required>
+                                    <option value="Private Chalet Booking">Private Chalet Booking</option>
+                                    <option value="Helicopter Charter / Transport">Helicopter Charter / Transport</option>
+                                    <option value="Guided Mountaineering Expedition">Guided Mountaineering Expedition</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="guestMessage">Your Message</label>
+                                <textarea id="guestMessage" class="form-control" placeholder="Tell us about your dates, preferences, or special requests..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-gold" style="width: 100%; padding: 14px; cursor: pointer; font-size: 0.9rem;">Submit Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>VARELIA</h3>
+                <p>"The Art of Escape in Northern Pakistan."</p>
+                <p class="footer-copy">&copy; 2026 VARELIA Luxury Resort Hunza. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="stay.html">Accommodations</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="dining.html">Dining & Cuisine</a></li>
+                    <li><a href="guides.html">Expedition Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Admin Access</h4>
+                <ul>
+                    <li><a href="dashboard.html">Management Portal</a></li>
+                    <li><a href="journal.html">Journal / Stories</a></li>
+                    <li><a href="about.html">About VARELIA</a></li>
+                    <li><a href="contact.html">Guest Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Script to Save Contact Inquiries to SQL Backend -->
+    <script>
+        async function handleContactSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('guestName').value;
+            const email = document.getElementById('guestEmail').value;
+            const phone = document.getElementById('guestPhone').value;
+            const subject = document.getElementById('guestSubject').value;
+            const message = document.getElementById('guestMessage').value;
+
+            const inquiryData = {
+                msg_ref: 'INQ-' + Math.floor(1000 + Math.random() * 9000),
+                name: name,
+                email: email,
+                phone: phone,
+                subject: subject,
+                message: message
+            };
+
+            try {
+                const response = await fetch('http://localhost:3000/api/inquiries', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(inquiryData)
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    alert(`Thank you, ${name}! Your message has been successfully saved to the VARELIA database. Our team will contact you shortly.`);
+                    document.getElementById('guestContactForm').reset();
+                } else {
+                    alert('Error saving inquiry: ' + result.error);
+                }
+            } catch (err) {
+                console.error('Server connection error:', err);
+                alert('Server se connect nahi ho saka. Make sure your server is running!');
+            }
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

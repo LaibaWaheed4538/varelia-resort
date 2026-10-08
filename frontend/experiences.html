@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curated Experiences — VARELIA Hunza</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+       
+        .experiences-section {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 90px;
+    background-color: #fcfbf9;
+   
+    background-image: 
+        linear-gradient(rgba(252, 251, 249, 0.75), rgba(252, 251, 249, 0.75)),
+        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2000&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+        .experiences-section {
+            position: relative;
+            padding-top: 70px;
+            padding-bottom: 90px;
+            background-color: #fcfbf9;
+            background-image: 
+                linear-gradient(rgba(252, 251, 249, 0.92), rgba(252, 251, 249, 0.92)),
+                url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2000&q=80');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .feature-card {
+            background: #ffffff;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e8e2d5;
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="main-header" class="header-transparent">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="logo-text">VARELIA</span>
+                <span class="logo-sub">HUNZA VALLEY • PAKISTAN</span>
+            </a>
+            
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="stay.html" class="nav-link">Stay</a>
+                <a href="experiences.html" class="nav-link active">Experiences</a>
+                <a href="packages.html" class="nav-link">Packages</a>
+                <a href="dining.html" class="nav-link">Dining</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="booking.html" class="btn btn-gold">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header Banner -->
+        <section class="hero-section" style="height: 60vh; min-height: 450px; background-image: url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=2000&q=80');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="tagline">UNBOUNDED KARAKORAM ADVENTURES</p>
+                <h1 class="hero-title">Curated Experiences</h1>
+                <p class="hero-desc">Immerse yourself in alpine luxury camping, high-altitude ziplining, glacier treks, and ancient Silk Road heritage.</p>
+            </div>
+        </section>
+
+        
+        <section class="experiences-section">
+            <div class="container">
+                <div class="section-intro text-center">
+                    <span class="section-tag">TAILORED EXPEDITIONS</span>
+                    <h2>Adventures in the North</h2>
+                    <p>Every activity is led by certified mountain guides, glamping hosts, naturalists, and cultural historians.</p>
+                </div>
+
+                <!-- Grid (6 Cards) -->
+                <div class="features-design-grid" style="grid-template-columns: repeat(3, 1fr); gap: 32px;">
+                    
+                    <!-- Experience 01: High-Altitude Luxury Camping -->
+                    <div class="feature-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border-radius: 4px;">
+                        <div style="width: 100%; height: 240px; overflow: hidden; position: relative;">
+                            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80" alt="Karakoram Luxury Glamping & Night Stargazing" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+                        </div>
+                        <div style="padding: 32px 28px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div class="card-icon" style="font-size: 1.8rem; margin-bottom: 12px;">01</div>
+                                <h3>Karakoram Stargazing & Camping</h3>
+                                <p style="color: var(--color-gold); font-weight: 600; font-size: 0.85rem; margin-bottom: 12px;">Overnight Stay • Private Butler & Bonfire</p>
+                                <p>Spend an unforgettable night under the pristine Hunza night sky inside heated luxury canvas bell tents with private campfire dining and local music.</p>
+                            </div>
+                            <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #e8e2d5; display: flex; justify-content: space-between; align-items: center;">
+                                <span style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: var(--color-primary);">PKR 22,000 / night</span>
+                                <a href="booking.html" class="btn btn-gold" style="padding: 8px 18px; font-size: 0.75rem;">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 02: High-Wire Canyon Zipline -->
+                    <div class="feature-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border-radius: 4px;">
+                        <div style="width: 100%; height: 240px; overflow: hidden; position: relative;">
+                            <img src="https://images.unsplash.com/photo-1521336575822-6da63fb45455?auto=format&fit=crop&w=800&q=80" alt="Canyon Zipline Adventure" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+                        </div>
+                        <div style="padding: 32px 28px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div class="card-icon" style="font-size: 1.8rem; margin-bottom: 12px;">02</div>
+                                <h3>Passu Canyon Zipline</h3>
+                                <p style="color: var(--color-gold); font-weight: 600; font-size: 0.85rem; margin-bottom: 12px;">Half Day • Safety Gear & Instructors</p>
+                                <p>Fly over 1,000 meters across river gorges and pine forest canopy on one of Pakistan's highest outdoor zip lines.</p>
+                            </div>
+                            <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #e8e2d5; display: flex; justify-content: space-between; align-items: center;">
+                                <span style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: var(--color-primary);">PKR 15,000 / guest</span>
+                                <a href="booking.html" class="btn btn-gold" style="padding: 8px 18px; font-size: 0.75rem;">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 03: Attabad Lake Yachting -->
+                    <div class="feature-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border-radius: 4px;">
+                        <div style="width: 100%; height: 240px; overflow: hidden; position: relative;">
+                            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Attabad Lake Turquoise Waters" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+                        </div>
+                        <div style="padding: 32px 28px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div class="card-icon" style="font-size: 1.8rem; margin-bottom: 12px;">03</div>
+                                <h3>Attabad Turquoise Boat Safari</h3>
+                                <p style="color: var(--color-gold); font-weight: 600; font-size: 0.85rem; margin-bottom: 12px;">3 Hours • Private Speedboat & Picnic</p>
+                                <p>Glide across the crystalline turquoise waters of Attabad Lake with fresh juice refreshments and chef-prepared organic canapés.</p>
+                            </div>
+                            <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #e8e2d5; display: flex; justify-content: space-between; align-items: center;">
+                                <span style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: var(--color-primary);">PKR 20,000 / tour</span>
+                                <a href="booking.html" class="btn btn-gold" style="padding: 8px 18px; font-size: 0.75rem;">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 04: Passu Glacier Ice Trek -->
+                    <div class="feature-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border-radius: 4px;">
+                        <div style="width: 100%; height: 240px; overflow: hidden; position: relative;">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" alt="Passu Glacier Ice Trek" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+                        </div>
+                        <div style="padding: 32px 28px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div class="card-icon" style="font-size: 1.8rem; margin-bottom: 12px;">04</div>
+                                <h3>Passu Glacier Ice Trek</h3>
+                                <p style="color: var(--color-gold); font-weight: 600; font-size: 0.85rem; margin-bottom: 12px;">Full Day • Private Expedition Lead</p>
+                                <p>Cross the dramatic moraine ridges of Passu and Batura glaciers with certified high-altitude mountaineers and custom safety gear.</p>
+                            </div>
+                            <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #e8e2d5; display: flex; justify-content: space-between; align-items: center;">
+                                <span style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: var(--color-primary);">PKR 30,000 / guest</span>
+                                <a href="booking.html" class="btn btn-gold" style="padding: 8px 18px; font-size: 0.75rem;">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 05: Silk Road Heritage & Fort Tour -->
+                    <div class="feature-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border-radius: 4px;">
+                        <div style="width: 100%; height: 240px; overflow: hidden; position: relative;">
+                            <img src="https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=800&q=80" alt="Altit & Baltit Fort Heritage" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+                        </div>
+                        <div style="padding: 32px 28px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div class="card-icon" style="font-size: 1.8rem; margin-bottom: 12px;">05</div>
+                                <h3>Baltit & Altit Royal Fort Expeditions</h3>
+                                <p style="color: var(--color-gold); font-weight: 600; font-size: 0.85rem; margin-bottom: 12px;">Half Day • Historian Guide</p>
+                                <p>Private access to 1,100-year-old Mir royal residences, historic wood carvings, and traditional Hunza organic tea ceremonies.</p>
+                            </div>
+                            <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #e8e2d5; display: flex; justify-content: space-between; align-items: center;">
+                                <span style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: var(--color-primary);">PKR 18,000 / guest</span>
+                                <a href="booking.html" class="btn btn-gold" style="padding: 8px 18px; font-size: 0.75rem;">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 06: Khunjerab Pass High-Border Drive -->
+                    <div class="feature-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border-radius: 4px;">
+                        <div style="width: 100%; height: 240px; overflow: hidden; position: relative;">
+                            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="Khunjerab World Highest Border Drive" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+                        </div>
+                        <div style="padding: 32px 28px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div class="card-icon" style="font-size: 1.8rem; margin-bottom: 12px;">06</div>
+                                <h3>Khunjerab Highest Border Overland</h3>
+                                <p style="color: var(--color-gold); font-weight: 600; font-size: 0.85rem; margin-bottom: 12px;">Full Day • Luxury SUV & Chauffeur</p>
+                                <p>Drive up to 4,693m altitude at the World's Highest Border Gate, spotting Himalayan ibex and marmots along the Karakoram Highway.</p>
+                            </div>
+                            <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #e8e2d5; display: flex; justify-content: space-between; align-items: center;">
+                                <span style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: var(--color-primary);">PKR 35,000 / vehicle</span>
+                                <a href="booking.html" class="btn btn-gold" style="padding: 8px 18px; font-size: 0.75rem;">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>VARELIA</h3>
+                <p>"The Art of Escape in Northern Pakistan."</p>
+                <p class="footer-copy">&copy; 2026 VARELIA Luxury Resort Hunza. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="stay.html">Accommodations</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="dining.html">Dining & Cuisine</a></li>
+                    <li><a href="packages.html">Exclusive Packages</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Guest Services</h4>
+                <ul>
+                    <li><a href="booking.html">Airport Heli Transfers</a></li>
+                    <li><a href="dining.html">Private Barbeque</a></li>
+                    <li><a href="experiences.html">Gilgit Expedition Guides</a></li>
+                    <li><a href="stay.html">Luxury Suites</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About VARELIA — The Art of Escape in Hunza Valley</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        .about-story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-top: 60px;
+        }
+        .about-img-box {
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+            border: 2px solid var(--color-gold, #D4AF37);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+        .about-img-box img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            display: block;
+        }
+        .about-text h3 {
+            font-family: var(--font-heading, 'Cinzel', serif);
+            font-size: 1.8rem;
+            color: var(--color-primary, #0F172A);
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        .about-text p {
+            font-size: 0.95rem;
+            color: var(--text-muted, #64748B);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            background: var(--color-primary, #0F172A);
+            padding: 50px 30px;
+            border-radius: 4px;
+            margin: 80px 0;
+            text-align: center;
+            color: #ffffff;
+            border-top: 3px solid var(--color-gold, #D4AF37);
+        }
+        .stat-number {
+            font-family: var(--font-heading, 'Cinzel', serif);
+            font-size: 2.2rem;
+            color: var(--color-gold, #D4AF37);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .stat-label {
+            font-size: 0.8rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #94A3B8;
+        }
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .pillar-card {
+            background: #ffffff;
+            border: 1px solid #E2E8F0;
+            padding: 40px 30px;
+            border-radius: 4px;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .pillar-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--color-gold, #D4AF37);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+        }
+        .pillar-icon {
+            font-size: 2.2rem;
+            color: var(--color-gold, #D4AF37);
+            margin-bottom: 20px;
+        }
+        .pillar-title {
+            font-family: var(--font-heading, 'Cinzel', serif);
+            font-size: 1.2rem;
+            color: var(--color-primary, #0F172A);
+            margin-bottom: 12px;
+        }
+        .pillar-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted, #64748B);
+            line-height: 1.6;
+        }
+        .founder-quote {
+            background: #F8FAFC;
+            border-left: 4px solid var(--color-gold, #D4AF37);
+            padding: 40px;
+            margin: 80px 0 30px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .founder-quote p {
+            font-style: italic;
+            font-size: 1.05rem;
+            color: var(--color-primary, #0F172A);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+        .founder-author {
+            font-family: var(--font-heading, 'Cinzel', serif);
+            font-weight: 600;
+            color: var(--color-gold, #D4AF37);
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation Header -->
+    <header id="main-header" class="header-transparent">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="logo-text">VARELIA</span>
+                <span class="logo-sub">HUNZA VALLEY • PAKISTAN</span>
+            </a>
+            
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="stay.html" class="nav-link">STAY</a>
+                <a href="experiences.html" class="nav-link">EXPERIENCES</a>
+                <a href="packages.html" class="nav-link">PACKAGES</a>
+                <a href="dining.html" class="nav-link">DINING</a>
+                <a href="transport.html" class="nav-link">TRANSPORT</a>
+                <a href="dashboard.html" class="nav-link" style="color: var(--color-gold, #D4AF37);">DASHBOARD</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="booking.html" class="btn btn-gold" style="white-space: nowrap;">BOOK NOW</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Unique Hero Background -->
+        <section class="hero-section" style="height: 60vh; min-height: 450px; background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=2000&q=80'); background-size: cover; background-position: center;">
+            <div class="hero-overlay" style="background: rgba(15, 23, 42, 0.6);"></div>
+            <div class="hero-content">
+                <p class="tagline">OUR HERITAGE & SANCTUARY</p>
+                <h1 class="hero-title">THE VARELIA LEGACY</h1>
+                <p class="hero-desc">Where ancient Karakoram architecture meets uncompromising modern luxury at 2,500 meters above sea level.</p>
+            </div>
+        </section>
+
+        <!-- Brand Story Section -->
+        <section style="padding: 90px 0; background-color: #fcfbf9;">
+            <div class="container">
+                <div class="section-intro text-center">
+                    <span class="section-tag">THE PHILOSOPHY OF ESCAPE</span>
+                    <h2>Rooted in the Roof of the World</h2>
+                    <p>Designed for travelers seeking utter seclusion, pristine mountain air, and profound cultural immersion.</p>
+                </div>
+
+                <div class="about-story-grid">
+                    <div class="about-img-box">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80" alt="Hunza Valley Mountain Backdrop">
+                    </div>
+                    <div class="about-text">
+                        <h3>Handcrafted Architecture & Timeless Seclusion</h3>
+                        <p>Nestled beneath the towering sentinel peaks of Rakaposhi and Ultar Sar, VARELIA was conceived as a sanctuary that honors the sacred geography of Gilgit-Baltistan.</p>
+                        <p>Every chalet is built using time-honored dry-stone masonry and intricate Swat walnut woodwork, blending effortlessly into the rugged cliffs while offering ultra-luxurious heated interiors, panoramic observatory glass, and private butler service.</p>
+                        <p>Guests can step directly from their private terraces onto ancient Silk Road trails, accompanied by veteran mountain masters and cultural historians.</p>
+                        <a href="stay.html" class="btn btn-gold" style="margin-top: 10px; display: inline-block;">Explore Our Chalets</a>
+                    </div>
+                </div>
+
+                <!-- Stats Bar Details -->
+                <div class="stats-bar">
+                    <div>
+                        <div class="stat-number">2,500m</div>
+                        <div class="stat-label">Altitude Elevation</div>
+                    </div>
+                    <div>
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Private Luxury Chalets</div>
+                    </div>
+                    <div>
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Solar & Eco Powered</div>
+                    </div>
+                    <div>
+                        <div class="stat-number">700+</div>
+                        <div class="stat-label">Years Silk Heritage</div>
+                    </div>
+                </div>
+
+                <!-- Founder's Note -->
+                <div class="founder-quote">
+                    <p>"VARELIA is not merely a resort; it is a heartfelt tribute to the majestic Karakoram mountains and the unmatched warmth of Hunza hospitality. We invite discerning travelers to experience absolute peace where time pauses and nature speaks."</p>
+                    <div class="founder-author">— Karim Al-Hussaini, Founder & Managing Director</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Unique Pillars Section -->
+        <section style="padding: 80px 0; background-color: #ffffff; border-top: 1px solid #E2E8F0;">
+            <div class="container">
+                <div class="section-intro text-center">
+                    <span class="section-tag">CORE VALUES</span>
+                    <h2>The Three Pillars of VARELIA</h2>
+                </div>
+
+                <div class="pillars-grid">
+                    <div class="pillar-card">
+                        <div class="pillar-icon">⛰️</div>
+                        <h3 class="pillar-title">Unspoiled Wilderness</h3>
+                        <p class="pillar-desc">Direct gateway to elite high-altitude expeditions, private glacier lake boating on Attabad Lake, and untouched Karakoram hiking trails.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon">🏺</div>
+                        <h3 class="pillar-title">Indigenous Craft</h3>
+                        <p class="pillar-desc">Preserving centuries-old heritage through native stone structures, localized walnut carvings, and ancient Silk Road culinary arts.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon">✨</div>
+                        <h3 class="pillar-title">Sustainable Luxury</h3>
+                        <p class="pillar-desc">100% solar-powered heating, zero-carbon footprint initiatives, and organic farm-to-table dining harvested daily from local Hunza orchards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>VARELIA</h3>
+                <p>"The Art of Escape in Northern Pakistan."</p>
+                <p class="footer-copy">&copy; 2026 VARELIA Luxury Resort Hunza. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="stay.html">Accommodations</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="dining.html">Dining & Cuisine</a></li>
+                    <li><a href="guides.html">Expedition Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Admin Access</h4>
+                <ul>
+                    <li><a href="dashboard.html">Management Portal</a></li>
+                    <li><a href="journal.html">Journal / Stories</a></li>
+                    <li><a href="about.html">About VARELIA</a></li>
+                    <li><a href="contact.html">Guest Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

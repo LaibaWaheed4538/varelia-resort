@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The VARELIA Journal — Stories from Northern Pakistan</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        .journal-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 50px;
+        }
+        .journal-card {
+            background: #ffffff;
+            border: 1px solid #E2E8F0;
+            border-radius: 4px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .journal-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 35px rgba(0,0,0,0.08);
+            border-color: var(--color-gold, #D4AF37);
+        }
+        .journal-img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+        .journal-content {
+            padding: 24px;
+        }
+        .journal-meta {
+            font-size: 0.75rem;
+            color: var(--color-gold, #D4AF37);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .journal-title {
+            font-family: var(--font-heading, 'Cinzel', serif);
+            font-size: 1.2rem;
+            color: var(--color-primary, #0F172A);
+            margin-bottom: 12px;
+            line-height: 1.35;
+        }
+        .journal-excerpt {
+            font-size: 0.88rem;
+            color: var(--text-muted, #64748B);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation Header -->
+    <header id="main-header" class="header-transparent">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="logo-text">VARELIA</span>
+                <span class="logo-sub">HUNZA VALLEY • PAKISTAN</span>
+            </a>
+            
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="stay.html" class="nav-link">STAY</a>
+                <a href="experiences.html" class="nav-link">EXPERIENCES</a>
+                <a href="packages.html" class="nav-link">PACKAGES</a>
+                <a href="dining.html" class="nav-link">DINING</a>
+                <a href="transport.html" class="nav-link">TRANSPORT</a>
+                <a href="dashboard.html" class="nav-link" style="color: var(--color-gold, #D4AF37);">DASHBOARD</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="booking.html" class="btn btn-gold" style="white-space: nowrap;">BOOK NOW</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Unique Hero Background -->
+        <section class="hero-section" style="height: 60vh; min-height: 450px; background-image: url('https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=2000&q=80'); background-size: cover; background-position: center;">
+            <div class="hero-overlay" style="background: rgba(15, 23, 42, 0.55);"></div>
+            <div class="hero-content">
+                <p class="tagline">PAKISTAN MOUNTAIN CHRONICLES</p>
+                <h1 class="hero-title">THE VARELIA JOURNAL</h1>
+                <p class="hero-desc">Authentic stories of Hunza Valley, Karakoram peaks, and ancient Silk Route heritage in Northern Pakistan.</p>
+            </div>
+        </section>
+
+        <!-- Journal Content Grid Section -->
+        <section style="padding: 90px 0; background-color: #fcfbf9;">
+            <div class="container">
+                <div class="section-intro text-center">
+                    <span class="section-tag">PAKISTANI HERITAGE & ESSAYS</span>
+                    <h2>Tales from Gilgit-Baltistan</h2>
+                    <p>Curated stories matching the true spirit, culture, and landscapes of Northern Pakistan.</p>
+                </div>
+
+                <div class="journal-grid">
+                    
+                    <article class="journal-card">
+                        <div style="width: 100%; height: 230px; background: #1E293B; overflow: hidden;">
+                            <img src="https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Autumn Golden Trees in Hunza Valley, Pakistan" class="journal-img">
+                        </div>
+                        <div class="journal-content">
+                            <div class="journal-meta">Hunza Valley • Oct 2026</div>
+                            <h3 class="journal-title">Golden Blossom: Autumn's Golden Transformation in Hunza</h3>
+                            <p class="journal-excerpt">Discover why October turns the apricot and poplar trees of Karimabad into vivid golden and crimson landscapes under Rakaposhi Peak.</p>
+                        </div>
+                    </article>
+
+                   
+                    <article class="journal-card">
+                        <div style="width: 100%; height: 230px; background: #1E293B; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80" alt="Sunrise Over Karakoram Mountains, Pakistan" class="journal-img">
+                        </div>
+                        <div class="journal-content">
+                            <div class="journal-meta">Gojal Upper Hunza • Sep 2026</div>
+                            <h3 class="journal-title">Majestic Spires: Sunrise Over Cathedral Ridge in Passu</h3>
+                            <p class="journal-excerpt">An early morning expedition along the Karakoram Highway to view the golden sun breaking over the 6,000m serrated granite needles of Passu.</p>
+                        </div>
+                    </article>
+
+                    
+                    <article class="journal-card">
+                        <div style="width: 100%; height: 230px; background: #1E293B; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Turquoise Glacier Lake, Gilgit Baltistan" class="journal-img">
+                        </div>
+                        <div class="journal-content">
+                            <div class="journal-meta">Attabad Lake • Aug 2026</div>
+                            <h3 class="journal-title">Turquoise Waters: Private Jet-Skiing & Boating on Attabad Lake</h3>
+                            <p class="journal-excerpt">Navigating the deep sapphire-blue glacier waters created in 2010, surrounded by towering Karakoram rock walls.</p>
+                        </div>
+                    </article>
+
+                 
+                    <article class="journal-card">
+                        <div style="width: 100%; height: 230px; background: #1E293B; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="Fairy Meadows Nanga Parbat View" class="journal-img">
+                        </div>
+                        <div class="journal-content">
+                            <div class="journal-meta">Diamer • Jul 2026</div>
+                            <h3 class="journal-title">The Killer Mountain: Trekking to Nanga Parbat Base Camp</h3>
+                            <p class="journal-excerpt">Camping under lush pine forests at Fairy Meadows with unobstructed views of the 8,126-meter massive face of Nanga Parbat.</p>
+                        </div>
+                    </article>
+
+                    
+                    <article class="journal-card">
+                        <div style="width: 100%; height: 230px; background: #1E293B; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&fit=crop&w=800&q=80" alt="Kachura Mountain Lake, Skardu Pakistan" class="journal-img">
+                        </div>
+                        <div class="journal-content">
+                            <div class="journal-meta">Skardu Baltistan • Jun 2026</div>
+                            <h3 class="journal-title">Heaven on Earth: Shangrila & Lower Kachura Lake</h3>
+                            <p class="journal-excerpt">Exploring the heart of Baltistan, where wooden chalets meet serene mirror-like mountain lakes and ancient Tibetan mountain folklore.</p>
+                        </div>
+                    </article>
+
+                   
+                    <article class="journal-card">
+                        <div style="width: 100%; height: 230px; background: #1E293B; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" alt="Karakoram Highway Silk Route Journey Pakistan" class="journal-img">
+                        </div>
+                        <div class="journal-content">
+                            <div class="journal-meta">Expedition • May 2026</div>
+                            <h3 class="journal-title">The High Silk Road: Driving the Legendary Karakoram Highway</h3>
+                            <p class="journal-excerpt">Journeying along the 8th wonder of the world, connecting ancient Silk Route valleys surrounded by the highest mountain density on earth.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>VARELIA</h3>
+                <p>"The Art of Escape in Northern Pakistan."</p>
+                <p class="footer-copy">&copy; 2026 VARELIA Luxury Resort Hunza. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="stay.html">Accommodations</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="dining.html">Dining & Cuisine</a></li>
+                    <li><a href="journal.html">Journal / Stories</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Admin Access</h4>
+                <ul>
+                    <li><a href="dashboard.html">Management Portal</a></li>
+                    <li><a href="guides.html">Expedition Guides</a></li>
+                    <li><a href="about.html">About VARELIA</a></li>
+                    <li><a href="contact.html">Guest Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

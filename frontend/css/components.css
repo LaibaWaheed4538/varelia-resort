@@ -1,0 +1,48 @@
+
+
+/* Cards Grid Layout */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Card Styling */
+.ui-card {
+    background: var(--bg-surface);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid #eae5d9;
+    transition: var(--transition);
+}
+
+.ui-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--color-gold);
+}
+
+.ui-card-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.ui-card-body {
+    padding: 24px;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #f2ece1;
+    color: var(--color-green);
+}
