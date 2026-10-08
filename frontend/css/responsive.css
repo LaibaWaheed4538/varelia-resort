@@ -119,6 +119,27 @@
         margin-bottom: 8px !important;
     }
 
+    /* Hero Buttons Fix: Prevent text clipping on mobile buttons */
+    .hero-buttons {
+        flex-direction: column !important;
+        gap: 12px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .hero-section .btn,
+    .hero-buttons a,
+    .hero-buttons button {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 12px 15px !important;
+        font-size: 0.75rem !important;
+        letter-spacing: 1px !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+        white-space: nowrap !important;
+    }
+
     /* Dashboard & Overview Layout Stacking */
     div[class*="layout"], 
     div[class*="dashboard"], 
@@ -169,7 +190,7 @@
         width: 100% !important;
     }
 
-    /* Dashboard Overview & Management Cards Stacked One by One to Prevent Cutting */
+    /* Dashboard Overview & Management Cards Stacked One by One */
     .features-design-grid,
     .grid,
     .cards-grid,
@@ -191,17 +212,6 @@
         width: 100% !important;
         max-width: 100% !important;
         box-sizing: border-box !important;
-    }
-
-    .hero-buttons {
-        flex-direction: column !important;
-        gap: 10px !important;
-    }
-
-    .hero-section .btn {
-        width: 100% !important;
-        padding: 12px 20px !important;
-        font-size: 0.75rem !important;
     }
 
     .stats-banner {
