@@ -119,7 +119,7 @@
         margin-bottom: 8px !important;
     }
 
-    /* Hero Buttons Fix: Prevent text clipping on mobile buttons */
+    /* Hero Buttons Fix */
     .hero-buttons {
         flex-direction: column !important;
         gap: 12px !important;
@@ -138,6 +138,39 @@
         box-sizing: border-box !important;
         text-align: center !important;
         white-space: nowrap !important;
+    }
+
+    /* Booking Page Options & Form Fields Comprehensive Fix */
+    form, 
+    .booking-form, 
+    .selection-box, 
+    .options-container,
+    .guide-selection,
+    [class*="booking"],
+    [class*="selection"],
+    [class*="option"],
+    [class*="form-group"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    label, 
+    .option-item, 
+    .radio-card, 
+    [class*="guide-item"],
+    [class*="select-card"],
+    [class*="option-card"] {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 15px !important;
+        margin-bottom: 12px !important;
+        white-space: normal !important;
+        word-break: break-word !important;
     }
 
     /* Dashboard & Overview Layout Stacking */
