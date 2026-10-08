@@ -119,18 +119,56 @@
         margin-bottom: 8px !important;
     }
 
-    /* All Grids & Cards (Journal, Guides, About, etc.) stacked one by one */
+    /* Dashboard & Overview Page Full Layout Stack Fix */
+    div[class*="layout"], 
+    div[class*="dashboard"], 
+    div[class*="admin"], 
+    section[class*="dashboard"] {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    aside, 
+    [class*="sidebar"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        position: relative !important;
+        height: auto !important;
+        display: block !important;
+        padding: 15px !important;
+        box-sizing: border-box !important;
+        margin-bottom: 15px !important;
+    }
+
+    [class*="content"], 
+    [class*="main"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: block !important;
+        padding: 15px !important;
+        box-sizing: border-box !important;
+        margin-left: 0 !important;
+    }
+
+    /* All Grids & Cards stacked one by one */
     .features-design-grid,
     .grid,
     .cards-grid,
     .journal-grid,
-    .guides-grid {
+    .guides-grid,
+    .dashboard-grid {
         grid-template-columns: 1fr !important;
         gap: 20px !important;
         width: 100% !important;
+        box-sizing: border-box !important;
     }
 
-    .luxury-card, .feature-card {
+    .luxury-card, .feature-card, .card {
         padding: 25px 20px !important;
         width: 100% !important;
         box-sizing: border-box !important;
@@ -184,7 +222,7 @@
         font-size: 0.5rem !important;
     }
 
-    .luxury-card, .feature-card {
+    .luxury-card, .feature-card, .card {
         padding: 20px 15px !important;
     }
 }
