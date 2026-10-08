@@ -155,23 +155,36 @@
         margin-left: 0 !important;
     }
 
-    /* All Grids & Cards stacked one by one */
+    /* All Grids & Cards stacked one by one without cutting */
     .features-design-grid,
     .grid,
     .cards-grid,
     .journal-grid,
     .guides-grid,
-    .dashboard-grid {
+    .dashboard-grid,
+    .pages-management-grid,
+    .management-grid {
         grid-template-columns: 1fr !important;
         gap: 20px !important;
         width: 100% !important;
         box-sizing: border-box !important;
     }
 
-    .luxury-card, .feature-card, .card {
+    .luxury-card, .feature-card, .card, .management-card {
         padding: 25px 20px !important;
         width: 100% !important;
+        max-width: 100% !important;
         box-sizing: border-box !important;
+        overflow: visible !important;
+    }
+
+    /* Narrow Picture Fix (About Resort / Content Images) */
+    img, .card-image img, .about-card img, .image-wrapper img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        object-fit: cover !important;
+        display: block !important;
     }
 
     .hero-buttons {
@@ -222,7 +235,7 @@
         font-size: 0.5rem !important;
     }
 
-    .luxury-card, .feature-card, .card {
+    .luxury-card, .feature-card, .card, .management-card {
         padding: 20px 15px !important;
     }
 }
