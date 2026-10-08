@@ -140,7 +140,7 @@
         white-space: nowrap !important;
     }
 
-    /* Booking Page Options & Form Fields Comprehensive Fix */
+    /* Booking Portal Form Labels & Fields Fix (Prevent text cut like Check-Out Date) */
     form, 
     .booking-form, 
     .selection-box, 
@@ -148,14 +148,34 @@
     .guide-selection,
     [class*="booking"],
     [class*="selection"],
-    [class*="option"],
     [class*="form-group"] {
         width: 100% !important;
         max-width: 100% !important;
         box-sizing: border-box !important;
     }
 
-    label, 
+    .booking-form label,
+    form label,
+    [class*="form-group"] label {
+        display: block !important;
+        width: 100% !important;
+        font-size: 0.75rem !important;
+        white-space: normal !important;
+        word-break: break-word !important;
+        overflow: visible !important;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea,
+    input[type="text"],
+    input[type="email"],
+    input[type="date"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
     .option-item, 
     .radio-card, 
     [class*="guide-item"],
