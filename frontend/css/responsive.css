@@ -119,7 +119,12 @@
         margin-bottom: 8px !important;
     }
 
-    .features-design-grid {
+    /* All Grids & Cards (Journal, Guides, About, etc.) stacked one by one */
+    .features-design-grid,
+    .grid,
+    .cards-grid,
+    .journal-grid,
+    .guides-grid {
         grid-template-columns: 1fr !important;
         gap: 20px !important;
         width: 100% !important;
@@ -127,6 +132,8 @@
 
     .luxury-card, .feature-card {
         padding: 25px 20px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
     }
 
     .hero-buttons {
