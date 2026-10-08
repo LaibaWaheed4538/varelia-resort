@@ -140,57 +140,19 @@
         white-space: nowrap !important;
     }
 
-    /* Booking Portal Form Labels & Fields Fix (Prevent text cut like Check-Out Date) */
-    form, 
-    .booking-form, 
-    .selection-box, 
-    .options-container,
-    .guide-selection,
-    [class*="booking"],
-    [class*="selection"],
-    [class*="form-group"] {
-        width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-    }
-
-    .booking-form label,
-    form label,
-    [class*="form-group"] label {
-        display: block !important;
-        width: 100% !important;
-        font-size: 0.75rem !important;
-        white-space: normal !important;
-        word-break: break-word !important;
-        overflow: visible !important;
-    }
-
-    .booking-form input,
-    .booking-form select,
-    .booking-form textarea,
-    input[type="text"],
-    input[type="email"],
-    input[type="date"] {
-        width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box !important;
-    }
-
-    .option-item, 
-    .radio-card, 
-    [class*="guide-item"],
-    [class*="select-card"],
-    [class*="option-card"] {
+    /* Booking Form Fields Stacking Fix (Check-In & Check-Out Date Box & Text Fix) */
+    #resort-booking-form div[style*="grid-template-columns"] {
         display: flex !important;
         flex-direction: column !important;
-        align-items: flex-start !important;
+        gap: 15px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    #resort-booking-form .form-control-luxury {
         width: 100% !important;
         max-width: 100% !important;
         box-sizing: border-box !important;
-        padding: 15px !important;
-        margin-bottom: 12px !important;
-        white-space: normal !important;
-        word-break: break-word !important;
     }
 
     /* Dashboard & Overview Layout Stacking */
