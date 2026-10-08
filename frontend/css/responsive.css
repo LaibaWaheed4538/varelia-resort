@@ -2,6 +2,8 @@
 @media screen and (max-width: 1024px) {
     .container {
         padding: 0 24px;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .desktop-nav {
@@ -20,20 +22,33 @@
 
 /* 2. Tablets & Mobile Landscape (Max Width: 768px) */
 @media screen and (max-width: 768px) {
+    /* Prevent horizontal page overflow on inner pages */
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
     #main-header {
         position: fixed !important;
         top: 0 !important;
         left: 0 !important;
         width: 100% !important;
+        max-width: 100vw !important;
         background: transparent !important;
         padding: 10px 0 !important;
         z-index: 1000 !important;
+        box-sizing: border-box !important;
     }
 
     .nav-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 15px !important;
+        box-sizing: border-box !important;
         flex-direction: column !important;
         gap: 8px !important;
-        padding: 0 15px !important;
         text-align: center !important;
     }
 
@@ -51,6 +66,7 @@
         flex-wrap: wrap !important;
         justify-content: center !important;
         gap: 6px 10px !important;
+        width: 100% !important;
     }
 
     .desktop-nav .nav-link {
@@ -60,7 +76,6 @@
         padding: 2px 0 !important;
     }
 
-    /* Navbar ke andar agar Book Now button ya extra element hai toh usko bhi set kiya hai */
     #main-header .btn, 
     #main-header a.btn {
         padding: 6px 14px !important;
@@ -69,11 +84,21 @@
         margin-top: 4px !important;
     }
 
-    /* Hero Section with extra top padding so nothing ever overlaps */
+    /* Inner pages container and layout fix */
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 110px 15px 40px 15px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Hero Section */
     .hero-section {
         height: auto !important;
         min-height: 520px !important;
         padding: 160px 15px 40px 15px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
     }
 
     .hero-title {
@@ -97,6 +122,7 @@
     .features-design-grid {
         grid-template-columns: 1fr !important;
         gap: 20px !important;
+        width: 100% !important;
     }
 
     .luxury-card, .feature-card {
@@ -118,6 +144,8 @@
         grid-template-columns: 1fr !important;
         padding: 25px 15px !important;
         gap: 15px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
     }
 
     .stat-num {
@@ -129,6 +157,8 @@
         grid-template-columns: 1fr !important;
         gap: 25px !important;
         text-align: center !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
     }
 }
 
