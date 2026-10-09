@@ -100,7 +100,7 @@ function initBookingForm() {
         const isLocal = window.location.hostname === 'localhost' || window.location.hostname.includes('192.168.');
         const backendURL = isLocal 
             ? `${window.location.protocol}//${window.location.hostname}:3000/api/bookings`
-            : 'https://your-railway-backend-url.railway.app/api/bookings'; // Live deployment par yahan backend link aayega
+            : '/api/bookings';
 
         try {
             const response = await fetch(backendURL, {
