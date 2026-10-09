@@ -96,7 +96,6 @@ function initBookingForm() {
             total_amount_pkr: totalAmount
         };
 
-        // Professional Dynamic Backend URL Configuration
         const isLocal = window.location.hostname === 'localhost' || window.location.hostname.includes('192.168.');
         const backendURL = isLocal 
             ? `${window.location.protocol}//${window.location.hostname}:3000/api/bookings`
