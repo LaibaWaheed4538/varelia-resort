@@ -10,7 +10,7 @@ function initBookingForm() {
     const transportSelect = document.getElementById('booking-transport'); 
     const guideSelect = document.getElementById('booking-guide');         
     const diningSelect = document.getElementById('booking-dining');       
-    const packageSelect = document.getElementById('booking-package');    
+    const packageSelect = document.getElementById('booking-package');   
     
     const summaryNights = document.getElementById('summary-nights');
     const summaryPrice = document.getElementById('summary-price');
@@ -98,8 +98,8 @@ function initBookingForm() {
 
         const isLocal = window.location.hostname === 'localhost' || window.location.hostname.includes('192.168.');
         const backendURL = isLocal 
-            ? `${window.location.protocol}//${window.location.hostname}:3000/api/bookings`
-            : '/api/bookings';
+            ? 'http://localhost:3000/api/bookings'
+            : 'https://varelia-resort-production.up.railway.app/api/bookings';
 
         try {
             const response = await fetch(backendURL, {

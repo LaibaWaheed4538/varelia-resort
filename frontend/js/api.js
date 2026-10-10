@@ -1,4 +1,7 @@
-const API_BASE_URL = '/api';
+const isLocal = window.location.hostname === 'localhost' || window.location.hostname.includes('192.168.');
+const API_BASE_URL = isLocal 
+    ? 'http://localhost:3000/api' 
+    : 'https://varelia-resort-production.up.railway.app/api';
 
 const ApiService = {
     async getBookings() {
